@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>サンプル</title>
+</head>
+
+<body>
+  <div id="app">
+    <ul>
+      <li v-for="item in list">{{item.name}} {{item.price}}</li>
+    </ul>
+  </div>
+  <script src="https://jp.vuejs.org/js/vue.js"></script>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        list: [
+          {name: '商品A', price: 1000},
+          {name: '商品B', price: 2000},
+          {name: '商品C', price: 980}
+        ]
+      }
+    });
+  </script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
